@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body bgcolor="#E6E6FA" class="register">
+    <form name="registration" action="register1.jsp" method="post" class="form">
+        <div class="register-logo">
+            <h2> Register Now</h2>
+            <img src="https://img.icons8.com/material-rounded/96/000000/sign-up-in-calendar.png" />
+        </div>
+
+
+        <div class="row">
+            <label for="r1" id="fn">First Name :</label>
+            <input type="text" name="fname" id="r1">
+        </div>
+        <div class="row">
+            <label for="r2" id="ln">Last Name :</label>
+            <input type="text" name="lname" id="r2">
+        </div>
+
+        <div class="row">
+            <label for="r4" id="pwd">Password :</label>
+            <input type="password" name="pass" id="r4">
+        </div>
+        <div class="row">
+            <label for="r5" id="em">Email :</label>
+            <input type="text" name="email" id="r5">
+        </div>
+        <div class="row">
+            <label for="r6" id="mn">Mobile No :</label>
+            <input type="text" name="mno" id="r6">
+        </div>
+        <div class="row">
+            <label for="r8" id="cy">City:</label>
+            <select name="ct" id="r8">
+                                <option>Select</option>
+                                <option>Mahdia</option>
+                                <option>Monastir</option>
+                                <option>sousse</option>
+                                <option>Tunis</option>
+                                <option>Kairwan</option>
+                                <option>bizerte</option>
+                                <option>sfax</option>
+                                <option>Beja</option>
+
+                        </select>
+            <br/><br/>
+        </div>
+        <div class="buttons">
+            <button type="submit" value="Submit" id="button">Register</button>
+            <div class="login">
+                <span>Do you have an account ? </span>
+                <div class="login-logo">
+                    <a href="./log-in/log-in.component.html">Login</a>
+                    <img src="https://img.icons8.com/material-outlined/24/000000/import.png" />
+                </div>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+        function save() {
+            var user = document.getElementById("user").value;
+            var pwd = document.getElementById("pwd").value;
+            alert("username" + user + "password" + pwd);
+        }
+    </script>
+</body>
+
+</html>

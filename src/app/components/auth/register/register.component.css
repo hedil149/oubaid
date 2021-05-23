@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 100px;
+    text-align: center;
+    align-content: center;
+}
+
+.register {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    position: relative;
+    height: 200vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0px;
+    position: relative;
+}
+
+.form {
+    background-color: #fff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    padding-left: 50px;
+    margin-top: 5px;
+}
+
+.form h2 {
+    color: rgb(181, 120, 175);
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.register-logo {
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 60px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.row label {
+    width: 50%;
+    margin-left: 80px;
+    text-align: left;
+    color: rgb(102, 102, 102);
+    font-weight: 500;
+}
+
+.row input {
+    margin-left: 80px;
+    padding: 8px 5px;
+    width: 100%;
+    outline: none;
+}
+
+.row input {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.row input:focus {
+    border: 1px solid #FC415A;
+}
+
+.row select {
+    width: 100%;
+    margin-left: 80px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 8px 5px;
+    color: rgb(102, 102, 102);
+    border-radius: 3px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons button {
+    width: 170px;
+    border-radius: 2px;
+    padding: 15px;
+    text-align: center;
+    margin: 10px auto;
+    border: none;
+    background-color: rgb(175, 76, 172);
+    color: #fff;
+    margin-top: 0.2px;
+    margin-left: 210px;
+}
+
+.buttons span {
+    margin: 10px 0;
+    color: rgb(102, 102, 102);
+}
+
+.buttons>.login {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* ============= Animation background ========= */
+
+.cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #D7D4E4;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+}
+
+.cube:nth-child(2n) {
+    border-color: #FFF;
+}
+
+.cube:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+}
+
+.cube:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+}
+
+.cube:nth-child(4) {
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+}
+
+.cube:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+}
+
+.cube:nth-child(6) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.login-logo a {
+    color: rgb(66, 66, 66);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.login-logo img {
+    width: 22px;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
